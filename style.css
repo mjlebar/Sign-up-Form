@@ -4,6 +4,7 @@ body {
   background-color: black;
   padding: 0px;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -13,6 +14,10 @@ body {
 
 a {
   color: white;
+}
+
+.empty {
+  height: 75px;
 }
 
 .logotext {
@@ -59,12 +64,56 @@ a {
 }
 
 .right {
-  background-color: rgb(158, 155, 155);
+  background-color: rgb(210, 218, 221);
   height: 800px;
+}
+
+.blurb {
+  margin-block: 50px;
+  margin-inline: 25px;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
   background-color: white;
+}
+
+button {
+  background-color: #596d48;
+}
+
+.row {
+  padding-inline: 25px;
+  padding-block: 5px;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  appearance: auto;
+  width: 175px;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(69, 71, 71);
+}
+
+legend {
+  padding-inline: 25px;
+  padding-block: 5px;
+  color: rgb(69, 71, 71);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
