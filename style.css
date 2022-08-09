@@ -12,8 +12,12 @@ body {
   src: url(Norse-Bold.otf);
 }
 
-a {
+.left a {
   color: white;
+}
+
+.right a {
+  color: #596d48;
 }
 
 .empty {
@@ -78,11 +82,28 @@ a {
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.inputs {
   background-color: white;
+  border-top: 2px solid gray;
+  border-radius: 2px;
+  box-shadow: 1px 3px 2px gray;
 }
 
 button {
+  appearance: none;
+  width: 150px;
+  margin-inline: 25px;
+  margin-top: 15px;
   background-color: #596d48;
+  font-family: inherit;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .row {
@@ -102,6 +123,7 @@ button {
 input {
   appearance: auto;
   width: 175px;
+  margin-bottom: 10px;
 }
 
 label {
@@ -112,8 +134,16 @@ label {
 
 legend {
   padding-inline: 25px;
-  padding-block: 5px;
+  padding-block: 10px;
   color: rgb(69, 71, 71);
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+input:focus {
+  box-shadow: 1px 1px 5px gray;
+}
+
+.right p {
+  margin-inline: 25px;
 }
